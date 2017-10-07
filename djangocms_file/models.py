@@ -39,6 +39,8 @@ def get_templates():
 
 @python_2_unicode_compatible
 class File(CMSPlugin):
+    class Meta:
+        app_label = "djangocms_file"
     """
     Renders a file wrapped by an anchor
     """
@@ -117,6 +119,8 @@ class File(CMSPlugin):
 
 @python_2_unicode_compatible
 class Folder(CMSPlugin):
+    class Meta:
+        app_label = "djangocms_file"
     """
     Renders a folder plugin to the selected tempalte
     """
